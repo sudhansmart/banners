@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Offer Banners</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+       
+        /* Style the food offer banner container */
+        .food-offer {
+            background-image: url(./images/background.jpg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover; /* This will make the background image cover the entire container */
+            color: #fff;
+            height: 100vh; /* Set the height to 100% of the viewport height */
+            font-family: Arial, sans-serif;
+            display: flex; /* Use flexbox to center the content vertically and horizontally */
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Center content vertically and horizontally */
+        }
+
+        /* Style the food offer banner content */
+        .food-offer-content {
+            text-align: center;
+        }
+
+        /* Style the food offer heading */
+        .food-offer h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        /* Style the food offer description */
+        .food-offer p {
+            font-size: 16px;
+        }
+
+        /* Style the food offer button */
+        .food-offer-button {
+            margin-top: 10px;
+            background-color: #fff;
+            color: #ff6600;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Style food images */
+        .food-image {
+            max-width: 300px;
+            max-height: 250px;
+            height: auto;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(228, 4, 4, 0.3);
+            cursor: pointer;
+            
+        }
+        .food-image:hover{
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(4, 228, 157, 0.963);
+        }
+       
+       
+    </style>
+</head>
+<body>
+    <div class="food-offer">
+     <div >
+        <img class="food-image" src="./images/food1.jpg.jpg" alt="Food 1">
+        <img class="food-image" src="./images/food2.jpg.jpg" alt="Food 2">
+        <img class="food-image" src="./images/food3.jpg.jpg" alt="Food 3">
+    </div>
+        <div class="food-offer-content">
+            <h1>Special <span style="color: seagreen;">Offer!</span></h1>
+            <p>Get 20% off on your favorite meal today.</p>
+            <button class="food-offer-button">Order Now</button>
+    </div>
+        <div >
+        <img class="food-image" src="./images/food4.jpg.jpg" alt="Food 4">
+        <img class="food-image" src="./images/food5.jpg.jpg" alt="Food 5">
+        <img class="food-image" src="./images/food6.jpg.jpg" alt="Food 6">
+    </div>
+    </div>
+</body>
+</html>
