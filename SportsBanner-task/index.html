@@ -13,15 +13,16 @@
 
         /* Style the brochure container */
         .brochure {
-            /* background-color: #f4f4f4; */
             background-image: url(./images/background.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-            height: 100vh;
             font-family: Arial, sans-serif;
             padding: 20px;
             text-align: center;
-            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         /* Style brochure headings */
@@ -36,19 +37,21 @@
             background-color: #fff;
             border-radius: 10px;
             padding: 20px;
-            margin: 20px auto;
+            margin: 20px;
             max-width: 300px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.41);
+            transition: box-shadow 0.3s ease;
         }
-        .brochure-item:hover{
+
+        .brochure-item:hover {
             box-shadow: 0 4px 15px rgba(44, 255, 248, 0.679);
         }
-        
 
         /* Style brochure item images */
         .brochure-item img {
             max-width: 100%;
             height: auto;
+            border-radius: 8px;
         }
 
         /* Style brochure item titles */
@@ -62,39 +65,48 @@
             font-size: 16px;
             color: goldenrod;
         }
-        .images{
+
+        .images {
             display: flex;
-            justify-content: center;   
+            flex-wrap: wrap;
+            justify-content: center;
         }
-        span{
-            color:sandybrown;
+
+        span {
+            color: sandybrown;
         }
-        
+
+        @media (max-width: 768px) {
+            .images {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="brochure">
-        <h1>Sports <span >Hut</span>!!</h1>
-        <p style="color :palegoldenrod">With More Special Offers! and Excited Gifts!!</p>
-       <div class="images">
-        <div class="brochure-item">
-            <img src="./images/sport1.jpg" alt="Football">
-            <h2>Gym Accessories</h2>
-            <p>“Work hard, look good.”.</p>
-        </div>
+        <h1>Sports <span>Hut</span>!!</h1>
+        <p style="color: palegoldenrod">With More Special Offers! and Excited Gifts!!</p>
+        <div class="images">
+            <div class="brochure-item">
+                <img src="./images/sport1.jpg" alt="Football">
+                <h2>Gym Accessories</h2>
+                <p>“Work hard, look good.”.</p>
+            </div>
 
-        <div class="brochure-item">
-            <img src="./images/sport2.jpg" alt="Tennis Racket">
-            <h2>Sports Shoe</h2>
-            <p>Keep your heels and standards high.</p>
-        </div>
+            <div class="brochure-item">
+                <img src="./images/sport2.jpg" alt="Tennis Racket">
+                <h2>Sports Shoe</h2>
+                <p>Keep your heels and standards high.</p>
+            </div>
 
-        <div class="brochure-item">
-            <img src="./images/sport3.jpg" alt="Basketball">
-            <h2>Skateboarding</h2>
-            <p>It is a way to let your body control the mind.</p>
+            <div class="brochure-item">
+                <img src="./images/sport3.jpg" alt="Basketball">
+                <h2>Skateboarding</h2>
+                <p>It is a way to let your body control the mind.</p>
+            </div>
         </div>
-    </div> 
     </div>
 </body>
 </html>
