@@ -15,19 +15,21 @@
         .food-offer {
             background-image: url(./images/background.jpg.jpg);
             background-repeat: no-repeat;
-            background-size: cover; /* This will make the background image cover the entire container */
+            background-size: cover; 
             color: #fff;
-            height: 100vh; /* Set the height to 100% of the viewport height */
             font-family: Arial, sans-serif;
-            display: flex; /* Use flexbox to center the content vertically and horizontally */
+            display: flex; 
             justify-content: center;
             align-items: center;
-            flex-direction: column; /* Center content vertically and horizontally */
+            flex-direction: column; 
+            padding: 20px; 
         }
 
         /* Style the food offer banner content */
         .food-offer-content {
             text-align: center;
+            max-width: 600px; /* Limit content width for better readability */
+            margin: auto; /* Center content horizontally */
         }
 
         /* Style the food offer heading */
@@ -55,40 +57,50 @@
 
         /* Style food images */
         .food-image {
-            max-width: 300px;
-            max-height: 250px;
-            height: auto;
+            max-width: 600px; 
+            height: 300px;
             margin: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(228, 4, 4, 0.3);
             cursor: pointer;
-            
         }
-        .food-image:hover{
+        
+        .food-image:hover {
             border-radius: 5px;
             box-shadow: 0 0 20px rgba(4, 228, 157, 0.963);
         }
-       
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            .food-offer {
+                padding: 10px 20px; /* Adjust padding for smaller screens */
+            }
+            .food-image {
+                max-width: 100%;
+              margin: 0px;
+            }
+        }
        
     </style>
 </head>
 <body>
     <div class="food-offer">
-     <div >
-        <img class="food-image" src="./images/food1.jpg.jpg" alt="Food 1">
-        <img class="food-image" src="./images/food2.jpg.jpg" alt="Food 2">
-        <img class="food-image" src="./images/food3.jpg.jpg" alt="Food 3">
-    </div>
         <div class="food-offer-content">
             <h1>Special <span style="color: seagreen;">Offer!</span></h1>
             <p>Get 20% off on your favorite meal today.</p>
             <button class="food-offer-button">Order Now</button>
-    </div>
-        <div >
-        <img class="food-image" src="./images/food4.jpg.jpg" alt="Food 4">
-        <img class="food-image" src="./images/food5.jpg.jpg" alt="Food 5">
-        <img class="food-image" src="./images/food6.jpg.jpg" alt="Food 6">
-    </div>
+        </div>
+        <div>
+            <img class="food-image" src="./images/food1.jpg.jpg" alt="Food 1">
+            <img class="food-image" src="./images/food2.jpg.jpg" alt="Food 2">
+            <img class="food-image" src="./images/food3.jpg.jpg" alt="Food 3">
+        </div>
+       
+        <div>
+            <img class="food-image" src="./images/food4.jpg.jpg" alt="Food 4">
+            <img class="food-image" src="./images/food5.jpg.jpg" alt="Food 5">
+            <img class="food-image" src="./images/food6.jpg.jpg" alt="Food 6">
+        </div>
     </div>
 </body>
 </html>
